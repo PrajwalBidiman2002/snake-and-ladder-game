@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snakes & Ladders Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="game-container">
+    <h1>🐍 Snakes & Ladders 🎲</h1><!--Actually beacuse ofsome layout issue it hidden beneth the board-->
+    
+
+   
+
+    <div class="game-layout">
+      <div class="board" id="board"></div>
+    </div>
+  </div>
+
+  <div class="dice-container">
+  <button id="rollBtn">Roll Dice</button>
+
+  <!-- Dice visual: 3x3 grid of dot spots -->
+  <div id="dice" class="dice" aria-hidden="true">
+    <div class="dot"></div> <!-- 1 -->
+    <div class="dot"></div> <!-- 2 -->
+    <div class="dot"></div> <!-- 3 -->
+    <div class="dot"></div> <!-- 4 -->
+    <div class="dot"></div> <!-- 5 -->
+    <div class="dot"></div> <!-- 6 -->
+    <div class="dot"></div> <!-- 7 -->
+    <div class="dot"></div> <!-- 8 -->
+    <div class="dot"></div> <!-- 9 -->
+  </div>
+
+  <!-- keep diceResult for text fallback or screen-readers -->
+  <p id="diceResult" style="margin-top:10px;">🎲</p>
+  <p id="turnInfo"></p>
+</div>
+
+
+  <div id="lobby">
+    <h2>Waiting Lobby</h2>
+    <div class="tokens">
+      <div id="p1" class="token player1"></div>
+      <div id="p2" class="token player2"></div>
+      <div id="p3" class="token player3"></div>
+      <div id="p4" class="token player4"></div>
+    </div>
+  </div>
+
+  <!-- ✅ Script placed at the very bottom -->
+  <script src="script.js"></script>
+  <audio id="diceSound" src="dice-roll.mp3" preload="auto"></audio>
+
+</body>
+</html>
